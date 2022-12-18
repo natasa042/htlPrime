@@ -1,0 +1,105 @@
+:root {
+    
+    --color-bg: #1F242E;
+    --color-white:  #ffffff;
+    --color-1: #486173;
+    --color-2: #1E1E1E;
+    --color-inf-prim: #4D58A8;
+    --color-inf-sec: #2C2629;
+    --color-bt-prim: #307351;
+    --color-bt-sec:  #193D2B;
+    --color-et-prim: #FFC300;
+    --color-et-sec:  #CE7C00;
+    --color-mt-prim: #421B1B;
+    --color-mt-sec:  #600202;
+
+    --f-p2: 14px/1.5 "DIN Next W01";
+  }
+  
+  html {
+    color: var(--color-3);
+    font-family: "DIN Next W01", Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+  }
+  
+  body {
+    margin: 0;
+    font-size: 1.6em;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+  }
+
+  h1,
+:global(.font-h1) {
+  font-size: 3rem;
+  line-height: 1.1;
+}
+h2,
+:global(.font-h2) {
+  font-size: 2.6rem;
+  line-height: 1;
+  font-weight: 400;
+}
+
+h3,
+:global(.font-h3) {
+  font-size: 2rem;
+  line-height: 1;
+}
+h4,
+:global(.font-h4) {
+  font-size: 1.8rem;
+  line-height: 1;
+  font-weight: 400;
+}
+h5,
+:global(.font-h5) {
+  font-size: 1.6rem;
+  line-height: 1;
+}
+h6,
+:global(.font-h6) {
+  font-size: 1.2rem;
+  line-height: 1;
+  font-weight: bold;
+}
+
+:global(main.content) > * {
+  margin: 1.25rem auto;
+}
+
+button,
+input {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+details summary::-webkit-details-marker,
+details summary::marker {
+  display: none;
+  content: "";
+}
