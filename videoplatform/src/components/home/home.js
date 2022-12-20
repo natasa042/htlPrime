@@ -1,9 +1,10 @@
 import React from "react"
+import Post from "../post/post";
 
 export default function Home(){
     return(
-        <body className="wrapper">
-
-        </body>
+        <div className="wrapper">
+            <Post />
+        </div>
     )
 }
