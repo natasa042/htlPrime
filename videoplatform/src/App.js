@@ -6,6 +6,7 @@ import Bautechnik from "./components/bautechnik";
 import Elektrotechnik from "./components/elektrotechnik";
 import Informatik from "./components/informatik";
 import Navbar from "./components/navbar/navbar";
+import Footer from "./components/footer/footer";
 import Post from "./components/post/post";
 import './components/navbar/navbar-style.scss'
 import './components/home/home-style.scss'
@@ -23,6 +24,7 @@ function App() {
         <Route path='/bautechnik' element={<Bautechnik/>} />
         <Route path='/elektrotechnik'element={<Elektrotechnik/>} />
       </Routes>
+      <Footer />
     </BrowserRouter>
 
   );
