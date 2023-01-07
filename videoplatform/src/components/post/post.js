@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import sanityClient from "../../client.js";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./post-style.scss"
 
 export default function Post(){
 
@@ -12,11 +13,13 @@ export default function Post(){
                 `*[_type == "post"]{
                 title,
                 slug,
+                mainText,
                 mainImage{
                     asset->{
                         _id,
                         url
                     },
+                
                    
                 }
             }`)
@@ -30,13 +33,18 @@ export default function Post(){
                 <div>
                     {postData && postData.map((post, index) => (
                     <article>
-                        <span>
+                        <div className="videoWrapper">
                             <video
                                 src={post.mainImage.asset.url}
                                 alt="bastard"
-                                className="video"
-                            />
-                        </span>
+                                className="video">
+                            </video>
+                            <p
+                                key={post.mainText}
+                                className="textField"
+                            >
+                            </p>
+                        </div>
                     </article>
 ))}
                 </div>

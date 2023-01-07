@@ -24,6 +24,11 @@ export default defineType({
       title: 'Main image',
       type: 'file',
     }),
+    defineField({
+      name: 'mainText',
+      title: 'Main Text',
+      type: 'text',
+    }),
   ],
 
   preview: {
