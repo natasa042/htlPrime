@@ -11,22 +11,25 @@ import Post from "./components/post/post";
 import './components/navbar/navbar-style.scss'
 import './components/home/home-style.scss'
 import './globals-module.css';
+import './App.scss';
+import Container from "react-bootstrap/esm/Container";
 
 function App() {
   return (
-    <BrowserRouter>
-     <Navbar />
-      <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/about' element={<About/>} />
-        <Route path='/Post/:slug' element={<Post/>} />
-        <Route path='/Informatik' element={<Informatik/>} />
-        <Route path='/bautechnik' element={<Bautechnik/>} />
-        <Route path='/elektrotechnik'element={<Elektrotechnik/>} />
-      </Routes>
-      <Footer />
-    </BrowserRouter>
-
+    <Container>
+      <BrowserRouter>
+      <Navbar />
+        <Routes className="routes">
+          <Route path='/' element={<Home/>}/>
+          <Route path='/about' element={<About/>} />
+          <Route path='/Post/:slug' element={<Post/>} />
+          <Route path='/Informatik' element={<Informatik/>} />
+          <Route path='/bautechnik' element={<Bautechnik/>} />
+          <Route path='/elektrotechnik'element={<Elektrotechnik/>} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </Container> 
   );
 }
 

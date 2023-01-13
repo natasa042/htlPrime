@@ -1,5 +1,7 @@
-.socialIcon{
-    padding-left: 20px;
-    height: 25px;
-    width: 25px;
+.nav-link{
+    color: var(--color-white);
+    margin-left: 10px;
+    &:hover{
+        color: gray;
+    }
 }

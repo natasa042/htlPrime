@@ -39,11 +39,11 @@ export default function Post(){
                                 alt="bastard"
                                 className="video">
                             </video>
-                            <p
-                                key={post.mainText}
+                            <h1
+                                key={post.index}
                                 className="textField"
-                            >
-                            </p>
+                            >{post.mainText}
+                            </h1>
                         </div>
                     </article>
 ))}
