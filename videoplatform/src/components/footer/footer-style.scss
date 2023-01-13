@@ -1,0 +1,7 @@
+.nav-link{
+    color: var(--color-white);
+    margin-left: 10px;
+    &:hover{
+        color: gray;
+    }
+}

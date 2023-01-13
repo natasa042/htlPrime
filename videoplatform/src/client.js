@@ -1,6 +1,6 @@
-import sanityClient from '@snaity/sanityClient'
+import sanityClient from '@sanity/client'
 
 export default sanityClient({
     projectId: "eyryjge0",
-    dataset: "htlvideo"
+    dataset: "production"
 })
