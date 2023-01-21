@@ -1,7 +1,22 @@
 .nav-link{
     color: var(--color-white);
-    margin-left: 10px;
     &:hover{
         color: gray;
     }
+}
+
+.image{
+    height: auto;
+}
+
+.nav{
+    display: flex;
+    height: auto;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 10px;
+        a{
+        display: flex;
+        align-items: center;}
 }
