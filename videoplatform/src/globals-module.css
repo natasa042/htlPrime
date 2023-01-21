@@ -13,15 +13,16 @@
     --color-mt-prim: #421B1B;
     --color-mt-sec:  #600202;
 
-    --f-p2: 14px/1.5 "DIN Next W01";
+    --f-p2: 14px/1.5 "Jaldi";
   }
   
   html {
-    font-family: "DIN Next W01", Arial, Helvetica, sans-serif;
+    font-family: 'Jaldi', sans-serif;
     font-size: 62.5%;
   }
   
   body {
+    font-family: 'Jaldi', sans-serif;
     margin: 0;
     font-size: 1.6em;
     background: var(--color-bg);
@@ -53,43 +54,33 @@
     margin: 0;
   }
 
-  h1,
-:global(.font-h1) {
-  font-size: 3rem;
+h1{
+  font-size: 9rem;
   line-height: 1.1;
 }
-h2,
-:global(.font-h2) {
+h2{
   font-size: 2.6rem;
   line-height: 1;
   font-weight: 400;
 }
 
-h3,
-:global(.font-h3) {
+h3{
   font-size: 2rem;
   line-height: 1;
 }
-h4,
-:global(.font-h4) {
+h4{
   font-size: 1.8rem;
   line-height: 1;
   font-weight: 400;
 }
-h5,
-:global(.font-h5) {
+h5{
   font-size: 1.6rem;
   line-height: 1;
 }
-h6,
-:global(.font-h6) {
+h6{
   font-size: 1.2rem;
   line-height: 1;
   font-weight: bold;
-}
-
-:global(main.content) > * {
-  margin: 1.25rem auto;
 }
 
 button,

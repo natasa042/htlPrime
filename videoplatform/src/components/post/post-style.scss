@@ -2,15 +2,15 @@ body, html{
     height: 100%;
 }
 .videoWrapper{
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 10%;
-}
-.video{
-    height: 500px;
+    display: grid;  
+    grid-template-columns: 1fr 1fr;
     margin-top: 100px;
+}   
+.video{
+    width: 800px;
+    border-radius: 5px;
 }
 .textField{
-    height: 200px;
-    width: 200px;
+    text-align: center;
+    margin: auto;
 }

@@ -34,16 +34,16 @@ export default function Post(){
                     {postData && postData.map((post, index) => (
                     <article>
                         <div className="videoWrapper">
+                            <h1
+                                key={post.index}
+                                className="textField"
+                                >{post.mainText}
+                            </h1>
                             <video
                                 src={post.mainImage.asset.url}
                                 alt="bastard"
                                 className="video">
                             </video>
-                            <h1
-                                key={post.index}
-                                className="textField"
-                            >{post.mainText}
-                            </h1>
                         </div>
                     </article>
 ))}
