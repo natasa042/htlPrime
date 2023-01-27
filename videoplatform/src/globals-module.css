@@ -3,9 +3,9 @@
     --color-bg: #1F242E;
     --color-white:  #ffffff;
     --color-1: #486173;
-    --color-2: #1E1E1E;
-    --color-inf-prim: #4D58A8;
-    --color-inf-sec: #2C2629;
+    --color-black: #252422;
+    --color-inf-prim: #F39201;
+    --color-inf-sec: #0162f3;
     --color-bt-prim: #307351;
     --color-bt-sec:  #193D2B;
     --color-et-prim: #FFC300;
@@ -18,7 +18,7 @@
   
   html {
     font-family: 'Jaldi', sans-serif;
-    font-size: 62.5%;
+    font-size: 65%;
   }
   
   body {
@@ -55,11 +55,11 @@
   }
 
 h1{
-  font-size: 9rem;
+  font-size: 6rem;
   line-height: 1.1;
 }
 h2{
-  font-size: 2.6rem;
+  font-size: 4rem;
   line-height: 1;
   font-weight: 400;
 }
