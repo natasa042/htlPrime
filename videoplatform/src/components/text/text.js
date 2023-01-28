@@ -10,10 +10,9 @@ export default function Bost(){
         sanityClient
             .fetch(
                 `*[_type == "bost"]{
-                title,
-                content,   
-                }
-            }`)
+                    title,
+                    content 
+                }`)
             .then((data) => setBost(data))
             .catch(console.error);
     }, []);
