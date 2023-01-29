@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import {PortableText} from '@portabletext/react';
 import sanityClient from "../../client.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./text-style.scss"
@@ -11,8 +12,8 @@ export default function Bost(){
             .fetch(
                 `*[_type == "bost"]{
                 title,
-                content,   
-                }
+                bosta,   
+                
             }`)
             .then((data) => setBost(data))
             .catch(console.error);
@@ -23,11 +24,9 @@ export default function Bost(){
                     {bostData && bostData.map((bost, index) => (
                     <article>
                         <div>
-                            <h1
-                                key={bost.index}
-                                className="textField"
-                                >{bost.title}
-                            </h1>
+                        <PortableText
+                            value={[bost.bosta]}
+                        />
                         </div>
                     </article>
 ))}

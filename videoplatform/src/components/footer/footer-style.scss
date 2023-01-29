@@ -8,10 +8,14 @@
 .image{
     height: auto;
 }
-
+.footerWrapper{
+    display: flex;
+    justify-content: space-evenly;
+    bottom: 0;
+}
 .nav{
     display: flex;
-    height: 180px;
+    max-width: 1320px;
     flex-wrap: nowrap;
     justify-content: space-around;
     padding: 10px;

@@ -5,6 +5,7 @@ import About from "./sites/about/about";
 import Bautechnik from "./sites/bautechnik/bautechnik";
 import Elektrotechnik from "./sites/elektrotechnik/elektrotechnik";
 import Informatik from "./sites/informatik/informatik";
+import Mechatronik from "./sites/mechatronik/mechatronik";
 import Navbar from "./components/navbar/navbar";
 import Footer from "./components/footer/footer";
 import Post from "./components/post/post";
@@ -20,7 +21,7 @@ import './App.scss';
 
 function App() {
   return (
-    <div id ="root">
+    <div>
       <Navbar />
       <div className="contentWrap">
         <BrowserRouter>
@@ -35,6 +36,7 @@ function App() {
             <Route path='/Informatik' element={<Informatik/>} />
             <Route path='/bautechnik' element={<Bautechnik/>} />
             <Route path='/elektrotechnik'element={<Elektrotechnik/>} />
+            <Route path='/mechatronik'element={<Mechatronik/>} />
           </Routes>
         </BrowserRouter>
       </div>

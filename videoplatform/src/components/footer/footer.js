@@ -6,7 +6,7 @@ import './footer-style.scss'
 
 function Footer() {
   return (
-          <Nav>
+          <div className="footerWrapper">
             <Nav>
               <img
                   src={Logo}
@@ -22,7 +22,7 @@ function Footer() {
               <Nav.Link href="/Impressum"><h3>Impresssum</h3></Nav.Link>
               <Nav.Link href="/Kontakt"><h3>Kontakt</h3></Nav.Link>
             </Nav>
-          </Nav>
+          </div>
   );
 }
 

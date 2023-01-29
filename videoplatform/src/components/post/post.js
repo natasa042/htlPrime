@@ -28,28 +28,26 @@ export default function Post(){
     }, []);
 
     return(
-        <main>
-            <section>
-                <div>
+                <div className="postWrapper">
                     {postData && postData.map((post, index) => (
-                    <article>
-                        <div className="videoWrapper">
-                            <h1
-                                key={post.index}
-                                className="textField"
-                                >{post.mainText}
-                            </h1>
-                            <video
-                                src={post.mainImage.asset.url}
-                                alt="bastard"
-                                className="video">
-                            </video>
+                        <div className="postInner">
+                            <div className="postTitle">                          
+                                <h1
+                                    key={post.index}
+                                    className="postTextField"
+                                    >{post.mainText}
+                                </h1>
+                            </div>
+                            <div className="postVideo">
+                                <video
+                                    src={post.mainImage.asset.url}
+                                    alt="bastard"
+                                    className="video">
+                                </video>
+                            </div>
                         </div>
-                    </article>
 ))}
                 </div>
-            </section>
-        </main>
 
     )
 }

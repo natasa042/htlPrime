@@ -1,16 +1,20 @@
-body, html{
-    height: 100%;
-}
-.videoWrapper{
-    display: grid;  
-    grid-template-columns: 1fr 1fr;
-    margin-top: 100px;
+.postWrapper{
+    display: flex;  
+    margin-top: 50px;
+    justify-content: center;
 }   
-.video{
-    width: 800px;
-    border-radius: 5px;
+.postInner{
+    display: flex;
 }
-.textField{
-    text-align: center;
-    margin: auto;
+.postTextField{
+    inline-size: 300px;
+    overflow-wrap: break-word;
+}
+.postTitle{
+    display: flex;
+    align-items: center;
+}
+.video{
+    width: 1000px;
+    border-radius: 5px;
 }
