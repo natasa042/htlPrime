@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import sanityClient from "../../client.js";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./post-style.scss"
+    import "./post-style.scss"
 
 export default function Post(){
 

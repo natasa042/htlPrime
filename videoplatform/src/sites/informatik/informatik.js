@@ -1,7 +1,7 @@
 import React from "react"
 import Picture from "../../components/picture/picture"
 import Gallery from "../../components/gallery/gallery"
-import Bost from "../../components/text/text"
+import Text from "../../components/text/text"
 import './informatik-style.scss';
 function Informationstechnik() {
     return (
@@ -19,7 +19,6 @@ function Informationstechnik() {
             </div>
             {/* Image Film oder Bild für die Unterseiten?  */}
            <h2 className="center">Videos der Abschlussarbeiten 2023</h2>
-           <Bost />
         </div>
     );
 }

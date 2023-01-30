@@ -3,31 +3,32 @@ import {PortableText} from '@portabletext/react';
 import sanityClient from "../../client.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./text-style.scss"
-export default function Bost(){
+export default function Text(){
 
-    const[bostData, setBost] = useState(null);
+    const[textData, setText] = useState(null);
 
     useEffect(() => {
         sanityClient
             .fetch(
-                `*[_type == "bost"]{
+                `*[_type == "text"]{
                 title,
+                slug,
                 text,   
                 
             }`)
-            .then((data) => setBost(data))
+            .then((data) => setText(data))
             .catch(console.error);
     }, []);
 
     return(
                 <div className="textWrapper">
-                    {bostData && bostData.map((bost, index) => (
+                    {textData && textData.map((text, index) => (
                     <article>
                         <div>
                         <h1
-                                    key={bost.index}
-                                    className="bostTextField"
-                                    >{bost.description}
+                                    key={text.index}
+                                    className="TextField"
+                                    >{text.title}
                                 </h1>
                         </div>
                     </article>
