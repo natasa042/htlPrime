@@ -12,7 +12,7 @@ export default function Bost(){
             .fetch(
                 `*[_type == "bost"]{
                 title,
-                bosta,   
+                text,   
                 
             }`)
             .then((data) => setBost(data))
@@ -24,9 +24,11 @@ export default function Bost(){
                     {bostData && bostData.map((bost, index) => (
                     <article>
                         <div>
-                        <PortableText
-                            value={[bost.bosta]}
-                        />
+                        <h1
+                                    key={bost.index}
+                                    className="bostTextField"
+                                    >{bost.description}
+                                </h1>
                         </div>
                     </article>
 ))}
