@@ -5,30 +5,30 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./text-style.scss"
 export default function Text(){
 
-    const[textData, setText] = useState(null);
+    const[textsData, setTexts] = useState(null);
 
     useEffect(() => {
         sanityClient
             .fetch(
-                `*[_type == "text"]{
+                `*[_type == "texts"]{
                 title,
                 slug,
-                text,   
+                description,   
                 
             }`)
-            .then((data) => setText(data))
+            .then((data) => setTexts(data))
             .catch(console.error);
     }, []);
 
     return(
                 <div className="textWrapper">
-                    {textData && textData.map((text, index) => (
+                    {textsData && textsData.map((texts, index) => (
                     <article>
                         <div>
                         <h1
-                                    key={text.index}
+                                    key={texts.index}
                                     className="TextField"
-                                    >{text.title}
+                                    >{texts.title}
                                 </h1>
                         </div>
                     </article>

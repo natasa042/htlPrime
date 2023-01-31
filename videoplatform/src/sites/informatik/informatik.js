@@ -19,6 +19,8 @@ function Informationstechnik() {
             </div>
             {/* Image Film oder Bild für die Unterseiten?  */}
            <h2 className="center">Videos der Abschlussarbeiten 2023</h2>
+           <Gallery/>
+           <Picture />
         </div>
     );
 }
