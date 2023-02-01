@@ -10,8 +10,8 @@ function Footer() {
             <Nav>
               <img
                   src={Logo}
-                  width="300"
-                  height="300"
+                  width="200"
+                  height="200"
                   className="image"
                   alt="React Bootstrap logo"
                 />

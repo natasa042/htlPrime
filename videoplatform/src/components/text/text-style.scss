@@ -1,3 +1,7 @@
 .textWrapper{
-    height: 140px;
+    display: flex;
+    justify-content: center;
+}
+.textInner{
+    width: 800px;
 }

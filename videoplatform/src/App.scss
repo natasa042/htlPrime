@@ -1,9 +1,6 @@
 .center{
     text-align: center;
 }
-.root{
-    display: flex;
-}
 
 .banner{
     margin-top: 20px;
@@ -23,5 +20,54 @@
     }
     h1{
         color: var(--color-white);
+    }
+}
+.contentWrap{
+    display: flex;
+}
+.siteWrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media (min-width:320px) and (max-width: 480px) {
+    .postInner{
+        flex-direction: column;
+    }
+    .video{
+     height: 200px;  
+     width: auto; 
+    }
+    h1{
+            font-size: 3rem;
+    }
+    .contentWrap{
+        flex-direction: column;
+    }
+
+    .galleryWrapper{
+        flex-direction: column;
+        align-items: center;
+        .galleryVideo{
+            height: 200px;
+            width: auto;
+        }
+    }
+
+    .textWrapper{
+        padding: 10px;
+    }
+    .bildWrapper{
+        margin: 10px;
+        .bild{
+            height: 200px;
+        }
+    }
+    .banner{
+        height: auto;
+        .logoInf{
+            display: none;
+        }
     }
 }

@@ -21,7 +21,7 @@ import './App.scss';
 
 function App() {
   return (
-    <div>
+    <div className ="siteWrapper">
       <Navbar />
       <div className="contentWrap">
         <BrowserRouter>
@@ -40,7 +40,6 @@ function App() {
           </Routes>
         </BrowserRouter>
       </div>
-      <Text/>
         <Footer className="footer" /> 
     </div>
   );

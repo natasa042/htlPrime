@@ -23,15 +23,12 @@ export default function Text(){
     return(
                 <div className="textWrapper">
                     {textsData && textsData.map((texts, index) => (
-                    <article>
-                        <div>
-                        <h1
-                                    key={texts.index}
-                                    className="TextField"
-                                    >{texts.title}
-                                </h1>
+                        <div className="textInner">
+                            <p key={texts.index}
+                            className="descriptionField"
+                            >{texts.description}
+                            </p>
                         </div>
-                    </article>
 ))}
                 </div>
 

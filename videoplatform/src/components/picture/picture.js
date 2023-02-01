@@ -28,10 +28,7 @@ export default function Picture(){
 
     return(
         <div className="bildWrapper">
-            <section>
-                <div>
                     {pictureData && pictureData.map((picture, index) => (
-                    <article>
                         <div className="pictureWrapper">
                             <img
                                 src={picture.image.asset.url}
@@ -39,11 +36,8 @@ export default function Picture(){
                                 className="bild">
                             </img>
                         </div>
-                    </article>
 ))}
                 </div>
-            </section>
-        </div>
 
     )
 }

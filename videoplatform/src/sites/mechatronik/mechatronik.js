@@ -1,5 +1,4 @@
 import React from "react"
-import './mechatronik-style.scss';
 import Picture from "../../components/picture/picture"
 import Gallery from "../../components/gallery/gallery"
 export default function Mechatronik() {
