@@ -1,7 +1,7 @@
 import React from "react"
-import Picture from "../../components/picture/picture"
-import Gallery from "../../components/gallery/gallery"
-import Text from "../../components/text/text"
+import Picture from "../components/picture/picture"
+import Gallery from "../components/gallery/gallery"
+import Text from "../components/text/text"
 function Informationstechnik() {
     return (
         <div>

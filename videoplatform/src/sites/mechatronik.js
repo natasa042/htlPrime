@@ -1,6 +1,6 @@
 import React from "react"
-import Picture from "../../components/picture/picture"
-import Gallery from "../../components/gallery/gallery"
+import Picture from "../components/picture/picture"
+import Gallery from "../components/gallery/gallery"
 export default function Mechatronik() {
     return (
         <div id ="root">

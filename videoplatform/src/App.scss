@@ -22,16 +22,16 @@
         color: var(--color-white);
     }
 }
-.contentWrap{
+/* .contentWrap{
     display: flex;
-}
+} */
 .siteWrapper{
     display: flex;
     flex-direction: column;
 }
 
 
-@media (min-width:320px) and (max-width: 480px) {
+/* @media (min-width:320px) and (max-width: 480px) {
     .postInner{
         flex-direction: column;
     }
@@ -70,4 +70,4 @@
             display: none;
         }
     }
-}
+} */
