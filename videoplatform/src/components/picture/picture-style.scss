@@ -2,6 +2,13 @@
     margin: 50px;
     display: flex;
     justify-content: center;
-    
+    @media (min-width:320px) and (max-width: 480px) {
+        margin: 10px;
+    }
 
+    .bild{
+        @media (min-width:320px) and (max-width: 480px) {
+            height: 200px;
+        }
+    }
 }

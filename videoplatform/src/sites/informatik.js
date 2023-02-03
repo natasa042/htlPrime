@@ -1,5 +1,6 @@
 import React from "react"
 import Picture from "../components/picture/picture"
+import DCarousel from "../components/carousel/carousel";
 import Gallery from "../components/gallery/gallery"
 import Text from "../components/text/text"
 function Informationstechnik() {
@@ -15,6 +16,7 @@ function Informationstechnik() {
             <Text />
             <div className="gallerWrapper">
                <Gallery/> 
+               <DCarousel />
             </div>
                 
            

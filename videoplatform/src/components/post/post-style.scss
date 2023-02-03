@@ -5,7 +5,9 @@
 }   
 .postInner{
     display: flex;
-}
+    @media (min-width:320px) and (max-width: 480px) {
+            flex-direction: column;
+}}
 .postTextField{
     inline-size: 300px;
     overflow-wrap: break-word;
@@ -20,5 +22,9 @@
 .video{
     width: 1000px;
     border-radius: 5px;
+    @media (min-width:320px) and (max-width: 480px) {
+        height: 200px;
+        width: auto;
+}
 }
 

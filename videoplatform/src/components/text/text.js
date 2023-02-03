@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import {PortableText} from '@portabletext/react';
 import sanityClient from "../../client.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./text-style.scss"

@@ -12,6 +12,7 @@ import Post from "./components/post/post";
 import Picture from "./components/picture/picture";
 import Gallery from "./components/gallery/gallery";
 import Text from "./components/text/text";
+import Slider from "./components/slider/slider";
 import './components/navbar/navbar-style.scss'
 import './components/footer/footer-style.scss'
 import './globals-module.css';
@@ -30,6 +31,7 @@ function App() {
             <Route path='/about' element={<About/>} />
             <Route path='/Post/:slug' element={<Post/>} />
             <Route path='/Picture/:slug' element={<Picture/>} />
+            <Route path='/Slider/:slug' element={<Slider/>} />
             <Route path='/Gallery/:slug' element={<Gallery/>} />
             <Route path='/Text/:slug' element={<Text/>} />
             <Route path='/Informatik' element={<Informatik/>} />
