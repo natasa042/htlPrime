@@ -6,16 +6,13 @@
 .galleryWrapper{
     display: flex;  
     justify-content: center;
-    margin: 20px;
-    @media (min-width:320px) and (max-width: 480px) {
-        flex-direction: column;
-        align-items: center;
-        .galleryVideo{
-            height: 200px;
-            width: auto;
-}}    
-}
+    margin: 20px; 
+}   
 
 .galleryInner{
     display: flex;
+}
+
+h1{
+    text-align: center;
 }

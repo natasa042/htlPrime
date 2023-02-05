@@ -19,7 +19,7 @@ function Footer() {
             <Nav>
               <Nav.Link href="/About"><h3>About</h3></Nav.Link>
               <Nav.Link href="/Datenschutz"><h3>Datenschutz</h3></Nav.Link>
-              <Nav.Link href="/Impressum"><h3>Impresssum</h3></Nav.Link>
+              <Nav.Link href="/Impressum"><h3>Impressum</h3></Nav.Link>
               <Nav.Link href="/Kontakt"><h3>Kontakt</h3></Nav.Link>
             </Nav>
           </div>

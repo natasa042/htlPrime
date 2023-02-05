@@ -9,10 +9,12 @@
     height: auto;
 }
 .footerWrapper{
+    clear: both;
     display: flex;
     justify-content: space-around;
-
+    width: 100%;
     bottom: 0;
+    position: relative;
 }
 .nav{
     display: flex;

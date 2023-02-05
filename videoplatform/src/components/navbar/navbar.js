@@ -2,13 +2,25 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import "bootstrap/dist/css/bootstrap.min.css";
+import { useMediaQuery } from 'react-responsive'
 import React from "react"
-
+ 
 function Navigation() {
+    const isBigScreen = useMediaQuery({ query: '(min-width: 1824px)' })
+    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
   return (
     <Navbar collapseOnSelect expand="lg" variant="dark" className="Navbar">
       <Container>
-        <Navbar.Brand href="/"><h2>HTL Saalfelden</h2></Navbar.Brand>
+        <Navbar.Brand href="/">
+          {isTabletOrMobile &&
+            <div className="smallFont">
+                <p>Mediathek</p><h2>HTL Saalfelden</h2>
+            </div>}
+            {isBigScreen&&
+            <div>
+                <h3>Mediathek</h3><h2>HTL Saalfelden</h2>
+            </div>}
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">

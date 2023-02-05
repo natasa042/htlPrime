@@ -1,8 +1,8 @@
-import {defineField, defineType} from 'sanity'
+import {defineField, defineType, defineArrayMember} from 'sanity'
 
 export default defineType({
-  name: 'post',
-  title: 'Post',
+  name: 'textsET',
+  title: 'Text ET',
   type: 'document',
   fields: [
     defineField({
@@ -20,15 +20,11 @@ export default defineType({
       },
     }),
     defineField({
-      name: 'mainImage',
-      title: 'Main image',
-      type: 'image',
-    }),
-    defineField({
-      name: 'mainText',
-      title: 'Main Text',
+      name: 'descriptionET',
+      title: 'beschreibung',
       type: 'text',
     }),
+    
   ],
 
 })

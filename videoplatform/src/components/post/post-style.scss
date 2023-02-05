@@ -5,26 +5,29 @@
 }   
 .postInner{
     display: flex;
-    @media (min-width:320px) and (max-width: 480px) {
-            flex-direction: column;
-}}
+    flex-direction: column-reverse;}
 .postTextField{
-    inline-size: 300px;
+    inline-size: 1000px;
+    overflow-wrap: break-word;
+}
+.postTextFieldSmall{
+    inline-size: 350px;
     overflow-wrap: break-word;
 }
 .postTitle{
+    margin: 30px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .postVideo{
     display: flex;
+    justify-content: center;
 }
 .video{
     width: 1000px;
     border-radius: 5px;
-    @media (min-width:320px) and (max-width: 480px) {
-        height: 200px;
-        width: auto;
 }
+.videoSmall{
+    width: 350px;
 }
-

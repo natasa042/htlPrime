@@ -1,22 +1,34 @@
 import React from "react"
 import Picture from "../components/picture/picture"
-import DCarousel from "../components/carousel/carousel";
 import Gallery from "../components/gallery/gallery"
+import { useMediaQuery } from 'react-responsive'
 import Text from "../components/text/text"
 function Informationstechnik() {
+    const isBigScreen = useMediaQuery({ query: '(min-width: 1824px)' })
+    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
     return (
         <div>
+            
             <div className="banner">
-                <div className="bannerInner">               
-                    <p>Fachschule für</p><h1>Informationstechnik</h1>
+                <div className="bannerInner"> 
+                {isTabletOrMobile &&
+                    <div className="small">
+                        <p>Fachschule für</p><h1>Informationstechnik</h1>
+                    </div>}  
+                {isBigScreen &&
+                    <div>
+                        <p>Fachschule für</p><h1>Informationstechnik</h1>
+                    </div>}             
+                    
                 </div>
             </div>
-            {/* Image Film oder Bild für die Unterseiten?  */}
+
+
             <Picture />
             <Text />
-            <div className="gallerWrapper">
-               <Gallery/> 
-               <DCarousel />
+            <h1>Abschlussarbeiten 2023</h1>
+            <div className="galleryWrapper">
+                <div className="gallery"><Gallery/></div> 
             </div>
                 
            

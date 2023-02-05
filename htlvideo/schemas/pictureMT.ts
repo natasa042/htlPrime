@@ -1,27 +1,18 @@
 import {defineField, defineType} from 'sanity'
 
 export default defineType({
-  name: 'carousel',
-  title: 'Carousel',
+  name: 'pictureMT',
+  title: 'Picture MT',
   type: 'document',
   fields: [
     defineField({
-      name: 'name',
+      name: 'nameMT',
       title: 'Name',
       type: 'string',
     }),
     defineField({
-      name: 'slug',
-      title: 'Slug',
-      type: 'slug',
-      options: {
-        source: 'name',
-        maxLength: 96,
-      },
-    }),
-    defineField({
-      name: 'carouselImage',
-      title: 'Carousel Image',
+      name: 'imageMT',
+      title: 'Image',
       type: 'image',
       options: {
         hotspot: true,
