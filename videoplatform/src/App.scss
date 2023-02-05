@@ -33,19 +33,6 @@
     flex-direction: column;
 }
 
-
-
-    .textWrapper{
-        @media (min-width:320px) and (max-width: 480px) {
-        padding: 10px;
-    }}
-
-    .bildWrapper{
-        margin: 10px;
-        .bild{
-            height: 200px;
-        }
-    }
     .banner{
         @media (min-width:320px) and (max-width: 480px) {
             margin: 10px;
