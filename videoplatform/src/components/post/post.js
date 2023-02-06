@@ -32,42 +32,23 @@ export default function Post(){
 
 
     return(
-                <div className="postWrapper">
-                    {postData && postData.map((post, index) => (
-                        <div className="postInner">
-                            <div className="postTitle"> 
-                            {isBigScreen &&
-                                <h3
-                                    key={post.index}
-                                    className="postTextField"
-                                    >{post.mainText}
-                                </h3>}  
-
-                            {isTabletOrMobile &&
-                                <h3
-                                    key={post.index}
-                                    className="postTextFieldSmall"
-                                    >{post.mainText}
-                                </h3>}                        
-                            </div>
-                            
-                            <div className="postVideo">
-                                {isBigScreen &&
-                                    <img
-                                        src={post.mainImage.asset.url}
-                                        alt="htl"
-                                        className="video">
-                                    </img>}
-                                {isTabletOrMobile &&
-                                    <img
-                                        src={post.mainImage.asset.url}
-                                        alt="htl"
-                                        className="videoSmall">
-                                    </img>} 
-                            </div>
+                <div className="Ausgangslage">
+                    <section>
+                        <div>
+                            <p>
+                                In unserem Abschlussprojekt kümmerten wir uns um die Entwicklung
+                                einer Mediathek für die HTBL-Saalfelden und um die Produktion
+                                zweier Imagevideos. Die Mediathek dient dazu, um Außenstehenden 
+                                einen Einblick in die verschiedenen Abteilungen zu geben.
+                                Die zwei Videos zeigen zwei verschiedene Projekte, die in unseren
+                                Werkstätten zustande kommen.
+                            </p>
                         </div>
-))}
+                    </section>
                 </div>
 
     )
 }
+
+
+
