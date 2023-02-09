@@ -1,29 +1,34 @@
-import {defineField, defineType} from 'sanity'
+// imageGallery.js
 
-export default defineType({
-  name: 'gallery',
-  title: 'Gallery',
-  type: 'document',
+export default {
+  name: "gallery",
+  type: "object",
+  title: "Gallery",
   fields: [
-    defineField({
-      name: 'title',
-      title: 'Title',
-      type: 'string',
-    }),
-    defineField({
-      name: 'slug',
-      title: 'Slug',
-      type: 'slug',
+    {
+      name: 'videos',
+      type: 'array',
+      title: 'videos',
+      of: [
+        {
+          name: 'video',
+          type: 'image',
+          title: 'video',
+          options: {
+            hotspot: true,
+          },
+          fields: [
+            {
+              name: 'alt',
+              type: 'string',
+              title: 'Alternative text'
+            }
+          ]
+        }
+      ],
       options: {
-        source: 'title',
-        maxLength: 96,
-      },
-    }),
-    defineField({
-      name: 'mainVideo',
-      title: 'Main Video',
-      type: 'file',
-    }),
-  ],
-
-})
+        layout: 'grid'
+      }
+    }
+  ]
+}

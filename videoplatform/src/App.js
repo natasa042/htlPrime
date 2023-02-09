@@ -24,7 +24,6 @@ function App() {
       <Navbar />
       <div className="contentWrap">
         <BrowserRouter>
-        
           <Routes className="routes">
             <Route path='/' element={<Home/>}/>
             <Route path='/about' element={<About/>} />

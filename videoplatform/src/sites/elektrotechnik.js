@@ -1,6 +1,4 @@
 import React from "react"
-import PictureET from "../components/picture/pictureET"
-import TextET from "../components/text/textET"
 import { useMediaQuery } from 'react-responsive'
 export default function Elektrotechnik() {
     const isBigScreen = useMediaQuery({ query: '(min-width: 1824px)' })
@@ -20,9 +18,6 @@ export default function Elektrotechnik() {
                     </div>} 
                 </div>
             </div>
-
-           <PictureET />
-           <TextET/>
         </div>
     );
 }

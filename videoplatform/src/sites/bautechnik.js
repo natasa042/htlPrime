@@ -1,6 +1,5 @@
 import React from "react"
-import PictureBT from "../components/picture/pictureBT"
-import TextBT from "../components/text/textBT"
+import It from "../components/it/it"
 import { useMediaQuery } from 'react-responsive'
 export default function Bautechnik() {
     const isBigScreen = useMediaQuery({ query: '(min-width: 1824px)' })
@@ -19,9 +18,7 @@ export default function Bautechnik() {
                     </div>} 
                 </div>
             </div>
-
-           <PictureBT />
-           <TextBT/>
+            <It/>
         </div>
     );
 }
