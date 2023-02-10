@@ -1,6 +1,5 @@
 import React from "react"
-import PictureMT from "../components/picture/pictureMT"
-import TextMT from "../components/text/textMT"
+import Mt from "../components/branches/mt/mt"
 import { useMediaQuery } from 'react-responsive'
 export default function Mechatronik() {
     const isBigScreen = useMediaQuery({ query: '(min-width: 1824px)' })
@@ -20,10 +19,7 @@ export default function Mechatronik() {
                     </div>} 
                 </div>
             </div>
-
-            <PictureMT />
-            <TextMT />
-
+            <Mt/>
         </div>
     );
 }

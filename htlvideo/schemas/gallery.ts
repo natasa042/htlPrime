@@ -24,6 +24,12 @@ export default defineType({
       title: 'Main Video',
       type: 'file',
     }),
+    {
+      name: 'tagline',
+      type: 'string',
+      title: 'Tagline'
+    },
+    
   ],
 
 })
