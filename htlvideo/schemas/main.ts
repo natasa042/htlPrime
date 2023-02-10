@@ -1,7 +1,7 @@
 export default {
-    name: "it",
+    name: "main",
     type: "document",
-    title: "Informationstechnik",
+    title: "Landing Page",
     fields: [
       {
         name: 'title',
@@ -13,7 +13,7 @@ export default {
         type: 'array',
         title: 'Komponente',
         of: [
-          { type: 'textWithIllustration' },
+          { type: 'hero' },
           ]
       }
     ]

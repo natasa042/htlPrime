@@ -6,7 +6,7 @@ export default {
       {
         name: 'heading',
         type: 'string',
-        title: 'Heading'
+        title: 'Titel'
       },
       {
         name: 'tagline',
@@ -14,9 +14,14 @@ export default {
         title: 'Tagline'
       },
       {
+        name: 'excerpt',
+        type: 'text',
+        title: 'Text'
+      },
+      {
         name: 'image',
         type: 'image',
-        title: 'Image',
+        title: 'Bild',
         options: {
           hotspot: true,
         },

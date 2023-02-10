@@ -1,7 +1,7 @@
 export default {
-    name: "it",
+     name: "et",
     type: "document",
-    title: "Informationstechnik",
+    title: "Elektrotechnik",
     fields: [
       {
         name: 'title',

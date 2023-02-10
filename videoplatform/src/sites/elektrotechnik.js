@@ -1,4 +1,5 @@
 import React from "react"
+import Et from "../components/branches/et/et"
 import { useMediaQuery } from 'react-responsive'
 export default function Elektrotechnik() {
     const isBigScreen = useMediaQuery({ query: '(min-width: 1824px)' })
@@ -18,6 +19,7 @@ export default function Elektrotechnik() {
                     </div>} 
                 </div>
             </div>
+            <Et/>
         </div>
     );
 }

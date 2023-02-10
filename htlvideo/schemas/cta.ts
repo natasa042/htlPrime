@@ -1,5 +1,3 @@
-// callToAction.js
-
 export default {
     name: "callToAction",
     type: "object",

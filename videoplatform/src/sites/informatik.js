@@ -1,9 +1,8 @@
 import React from "react"
-import Picture from "../components/picture/picture"
+import It from "../components/branches/it/it"
 import Gallery from "../components/gallery/gallery"
 import { useMediaQuery } from 'react-responsive'
-import Text from "../components/text/text"
-function Informationstechnik() {
+export default function Informationstechnik() {
     const isBigScreen = useMediaQuery({ query: '(min-width: 1824px)' })
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
     return (
@@ -24,9 +23,8 @@ function Informationstechnik() {
             </div>
 
 
-            <Picture />
-            <Text />
-            <h1>Abschlussarbeiten 2023</h1>
+            <It/>
+            <h1 className="aaHeadline">Abschlussarbeiten 2023</h1>
             <div className="galleryWrapper">
                 <div className="gallery"><Gallery/></div> 
             </div>
@@ -35,5 +33,3 @@ function Informationstechnik() {
         </div>
     );
 }
-
-export default Informationstechnik;

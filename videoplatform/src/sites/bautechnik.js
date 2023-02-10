@@ -1,5 +1,5 @@
 import React from "react"
-import It from "../components/it/it"
+import Bt from "../components/branches/bt/bt"
 import { useMediaQuery } from 'react-responsive'
 export default function Bautechnik() {
     const isBigScreen = useMediaQuery({ query: '(min-width: 1824px)' })
@@ -18,7 +18,7 @@ export default function Bautechnik() {
                     </div>} 
                 </div>
             </div>
-            <It/>
+            <Bt/>
         </div>
     );
 }

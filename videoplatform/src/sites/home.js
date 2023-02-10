@@ -1,10 +1,10 @@
 import React from "react"
-import Post from "../components/post/post";
+import Main from "../components/branches/main/main"
 export default function Home(){
 
     return(
         <div className="wrapper">   
-            <Post />
+            <Main />
         </div>
     )
 }

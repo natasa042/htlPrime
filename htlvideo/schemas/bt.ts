@@ -1,7 +1,7 @@
 export default {
-    name: "it",
+    name: "bt",
     type: "document",
-    title: "Informationstechnik",
+    title: "Bautechnik",
     fields: [
       {
         name: 'title',
